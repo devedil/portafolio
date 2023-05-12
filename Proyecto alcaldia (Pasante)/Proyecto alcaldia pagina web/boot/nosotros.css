@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&family=Roboto:wght@900&display=swap');
+
+
+#simon {
+    vertical-align: middle;
+    max-width: 100%;
+    margin-top: 60px;
+    
+}
+
+.bannergroup {
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+footer{
+	background: #000000;
+	padding-bottom: 0.1px;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin-top: 150px;
+}
+.contact-us{
+	width: 40px;
+	color:#ffffff
+
+}
+.brand{
+	font-weight: 500;
+	font-size: 40px;
+}
+.social-media{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+.social-media-icon{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+}
+.social-media-icon:hover{
+	background: white;
+	color: rgb(27, 85, 245);
+}
+.social-media-icon i{
+	font-size: 30px;
+	line-height: 60px;
+}
+.line{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 2px;
+	background: white;
+	margin-bottom: 30px;
+
+}
+
+.copy{
+text-align:center;
+color:  white;
+
+}
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+/* Contenido */
+
+.section{
+   color:  #4d4643;
+}
+strong {
+    font-weight: bold;
+}
+
+.section-title h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #6b8cce;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+
+
+
+
+.section-title {
+    text-align: center;
+}
+
+/* Menu */
+.nav{
+    background:#082e71;
+    height: 80px;
+    color: rgb(238, 232, 232);
+    
+    }
+    
+    
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+    
+.nav__logo{
+    font-size: 1.5em;
+    font-weight: 900;
+    }
+        
+.nav__menu{
+    z-index: 9;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    
+    }
+        
+.nav__item{
+            
+    color: rgb(246, 244, 244);
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+        
+.nav__item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+    }
+
+.nav__item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);;
+    }
+        
+        
+.nav__label, .nav__input{
+    display: none;
+    }
+        
+@media (max-width:700px){
+.nav__label{
+    display: block;
+    cursor: pointer;
+    }
+        
+.nav__menu{
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    
+    }
+        
+.nav__input:checked + .nav__menu{
+    clip-path: circle(100% at center);
+    }
+       
+
+     /* Contenido */
+        
+    .col-md-5, col-md-7{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    }
+
+.text-center {
+    text-align: center!important;
+    font-size: 18px;
+    }
+        
+       
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+.text-justify {
+    font-size: 18px;
+    text-align: justify!important;
+    font-style: italic!important;
+}
+
+.col-6, col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    
+}
+.col-md-6, col-md-4, mx-auto{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+} 
+
+/* responsive */
+.mx-auto {
+    text-align: center!important;
+    flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+body{
+    margin: 0px;
+    padding: 0px 0 0 0;
+    background-image: url(../boot/fondo__claro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+main{
+    padding: 60px;
+    padding-bottom: 0px;
+}
+.section-title{
+    padding: 10px;
+}

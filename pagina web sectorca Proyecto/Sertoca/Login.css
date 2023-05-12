@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Ibm Plex Sans';
+    src: url(../fuentes/IBMPlexSans-Regular.ttf);
+
+    font-family:'Open Sans';
+    src: url(../fuentes/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+.navbar-dark {
+    background: #f6b800;
+  }
+  .nav-link {
+    color: #ffff !important ;
+    font-family:'Ibm Plex Sans';
+  }
+
+  .containerprincipal{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100wv;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../prueba/Media/ImagenA.png);
+    background-position:top ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    gap: 60px;
+  }
+
+  input{
+    outline: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .boton{
+    font-family: 'Ibm Plex Sans';
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #555355;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #f6b800;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.2);
+  }
+
+  
+
+
+

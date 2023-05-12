@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Ibm Plex Sans';
+    src: url(../fuentes/IBMPlexSans-Regular.ttf);
+
+    font-family:'Open Sans';
+    src: url(../fuentes/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+
+.navbar-dark {
+    background: #f6b800;
+  }
+  .nav-link {
+    color: #ffff !important ;
+    font-family:'Ibm Plex Sans';
+  }
+
+
+

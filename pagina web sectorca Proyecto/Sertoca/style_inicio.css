@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Ibm Plex Sans';
+    src: url(../fuentes/IBMPlexSans-Regular.ttf);
+
+    font-family:'Open Sans';
+    src: url(../fuentes/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+.navbar-dark {
+    background: #f6b800;
+  }
+  .nav-link {
+    color: #ffff !important ;
+    font-family:'Ibm Plex Sans';
+  }
+ 
+  .img-back {
+    background-image: url(Media/Pictureb.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:inherit;
+    width: 100vw;
+    padding-top: 36%;
+    padding-left: 68%;
+  }
+ 
+
+.nosotros{
+  display: flex;
+  background-color: #292929;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding: 0%;
+}
+
+ .imagen{
+  width: 53vw;
+  margin-left: 0%;
+ }
+
+.cuadro-texto{
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 9%;
+  padding: 0;
+ }
+
+ .A{
+  font-weight: blod;
+  color: #ffff;
+  font-family:'Ibm Plex Sans';
+  border-bottom: 1px solid white;
+  font-size: 40px;
+ }
+ 
+ .B{
+  color: #f6b800;
+  font-family:'Ibm Plex Sans';
+  font-weight:normal;
+  font-size: 20px;
+  text-align: justify;
+ }
+
+
+ .Catálogo {
+  padding-top: 6%;
+  margin-left: 6%;
+  color: #f6b800;
+  border-bottom: 1px solid #f6b800;
+ }
+
+.row{
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+
+.Final{
+  background-color: #292929;
+  padding-bottom: 2%;
+}
+
+
+.C{
+  color: aliceblue;
+  margin-top: 5%;
+  margin-left: 7%;
+  font-family: 'Ibm Plex Sans';
+}
+
+.CC{
+  color: aliceblue;
+  margin-left: 3%;
+  margin-top: 4%;
+  font-family:'Open Sans';
+  font-weight: lighter;
+  text-align: justify;
+  justify-content: center;
+}
+
+.CC1{
+  padding: 2%;
+}
+.CC2{
+  padding: 3%;
+}
+.CC3{
+  padding: 3%;
+}
+
+

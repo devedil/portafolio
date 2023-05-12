@@ -1,0 +1,218 @@
+/* Menu */
+
+.nav{
+background:#082e71;
+height: 80px;
+color: rgb(238, 232, 232);
+}
+
+
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav__menu{
+    z-index: 9;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav__item{
+    
+    color: rgb(246, 244, 244);
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    
+
+}
+
+.nav__item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+
+}
+.nav__item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);;
+}
+
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+@media (max-width:700px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    
+    .nav__input:checked + .nav__menu{
+    clip-path: circle(100% at center);
+}
+}
+
+/* Lista de Ordenanzas */
+
+.t3-sidebar .t3-module {
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    margin-bottom: 0;
+}
+.t3-module {
+    background: transparent;
+    color: inherit;
+    margin-bottom: 32px;
+}
+.t3-sidebar .t3-module .module-ct {
+    border-top: 1px solid #eeeeee;
+}
+
+.module-ct {
+    background: transparent;
+    color: inherit;
+    padding: 32px;
+}
+p {
+    margin: 0 0 11.5px;
+}
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.article-intro, .article-content {
+    padding: 11.5px 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.col-xs-8 {
+    width: 66.66666667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+input[type="text"], .form-control {
+    box-shadow: none;
+}
+input[type="text"]{
+display: block;
+    width: 100%;
+    height: 37px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.71428571;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+}
+.col-xs-4 {
+    width: 33.33333333%;
+}
+.col-xs-4{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    
+    cursor: pointer;
+}
+.pull-right {
+    float: right;
+}
+.btn {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.pull-right {
+    float: right;
+}
+.pull-right {
+    float: right !important;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.71428571;
+    border-radius: 0;
+
+}
+
+h1{
+    margin-top: 40px;
+    margin-left:  20px;
+    text-decoration: none;
+    color: #000000;
+}
